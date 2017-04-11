@@ -1,0 +1,55 @@
+	*{
+			margin: 0px;
+			padding: 0px;
+}
+body{
+    background: url("../images/bg.jpg") ;
+}
+.center{
+  margin-top: 50px;
+  width: 100%;
+}
+.eletagList,.locobjList{
+    width: 100%;
+    height: 100%;
+    /*display: none;*/
+  }
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: .3;  
+    top: 0;  
+    left: 0; 
+    background-color: black;  
+    z-index: 10 ;  
+  }
+  #formDiv{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    display: none;
+    /*background-color: #f00;*/
+    z-index: 100;
+  }
+  #eletagForm{
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    height: 100%;
+    /*background-color: #0f0;*/
+  }
+/*  .eletag{
+    overflow: hidden;
+  }
+  #tagPager_center{
+    padding-left: 400px;
+  }*/
+  .delete,.edit,.bind,.unbind{
+    background-color: #fff;
+    border-radius: 7px;
+    margin-left: 10px;
+  }
+  #edit,#obj{
+    display: none;
+  }

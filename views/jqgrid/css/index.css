@@ -1,0 +1,268 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+.flasher{
+	width: 100%;
+	height: 100px;
+	/*background-color: #f00;*/
+}
+.flash{
+	width: 100%;
+	height: 100px;
+/*float: left;*/
+}
+.tras{
+	width: 1335px;
+	height: 600px;
+	margin: 0 auto;
+	/*		border: solid 1px #316a91;*/
+	/*		background-color: #0f0;*/
+
+}
+.infornav{
+	width: 210px;
+	height: 613px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color: #000;
+	float: left;
+	/*	background-color: #F34747;*/
+	/*				border-top: solid 5px #316a91;
+	border-bottom: solid 5px #316a91;*/
+	/*border-right: solid 5px #316a91;*/
+}
+.SmartCarfirstpage{
+	width: 1115px;
+	height: 600px;
+	/*	background-color: #f00;*/
+	float: left;
+	/*	overflow: hidden;*/
+	background: url("../../../images/bg.jpg")no-repeat  bottom right;
+}
+.SmartCarUser,.SmartCarPlace,.SmartCarHistory,.ETCUser,.ETCCharge,.ETCHistory,.CarNumRec,.CarRed{
+	width: 1115px;
+	height: 600px;
+	float: left;
+	/*	overflow: hidden;*/
+	display: none;
+	background: url("../../../images/bg.jpg")no-repeat bottom right;
+}
+.SmartCarnav{
+	width: 1116px;
+	height: 25px;
+	/*border: 3px solid #A8D4F1;*/
+	border-radius: 1px;
+	background: #dfeffc;
+	padding-left: 0.5em;
+}
+ul,li{
+	list-style-type: none;	
+	margin-left: 10px;
+
+}
+.infornav a{
+	padding-left: 20px;
+	color: #000;
+
+}
+.infornav a:link,.infornav a:visited{ text-decoration: none;}
+.infornav a:hover{
+	color: #e8e8e8;
+}
+.infornav ul li{
+	background-color: #fff;
+
+}
+.navleft {
+	width: 180px;
+	line-height: 35px;
+	text-align: left;
+	padding-left: 5px;
+	background: url(../../../images/ui-bg_gloss-wave_75_2191c0_500x100.png);
+}
+.navright {
+	width: 1115px;
+	height: 35px;
+	display:inline-block;
+	background: url(../../../images/ui-bg_gloss-wave_75_2191c0_500x100.png);
+	text-align: center;
+	margin-left: 5px;
+	/*background-color: #CCD3F9;*/
+}
+.navright_top{
+	width: 1115px;
+	height: 35px;
+	background: url(../../../images/ui-bg_gloss-wave_75_2191c0_500x100.png);
+	text-align: left;
+	padding-left: 0.5em;
+}
+.navlist{
+	background: url("../../../images/on.png") no-repeat 0px center;
+}
+.navlists{
+	background:url("../../../images/off.png") no-repeat 0px center;
+} 
+
+.SmartCarUser a:hover{
+	background-color: #dfeffc;
+}
+.button{
+	display:inline-block;
+	line-height: 25px;
+	margin-right: 20px;
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	color: #404142;
+	font-family: "宋体";
+	float: left;
+}
+.ScUserSearchText{
+	width: 140px;
+	height: 21px;
+	color: #AFABAB;
+	float: left;
+}
+.ScUserSearch{
+	width: 120px;
+	height: 23px;
+	background-color:#5997C9;
+	float: left; 
+}
+.ScUserSearch :hover{
+	cursor: pointer;
+}
+/*新用户注册表单*/
+.newuser{
+	width: 400px;
+	/*height: 400px;*/
+	display: none;
+	border-radius: 4px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 300;
+	top: 200px;
+	left: 300px;
+}
+.newuserW{
+	height: 400px;
+}
+.newuser tr td{
+	font-size: 18px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.newuser label{
+	padding-left:0.3em;
+	width: 80px;
+	height: 30px;
+}
+.newuser tr td input,.newuser tr td select{
+	width: 140px;
+	height: 30px;
+	border:1px solid #AEDCDE;
+	border-radius: 5px;
+}
+.error{
+	color: #D82410;
+	font-size: 8px;
+	line-height: 30px;
+
+}
+.rbutton{
+	width: 100px;
+	height: 30px;
+	border: 1px solid #c5dbec;
+	background: #dfeffc;
+	font-weight: bold;
+	color: #2e6e9e;
+	float: right;
+	margin-right: 30px;
+	margin-top: 30px;
+	line-height: 30px;
+}
+.submit a:hover{
+	cursor: pointer;
+}
+.rbutton span{
+	float: left;
+}
+.toptext{
+	width: 200px;
+	line-height: 35px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	float: left;
+}
+.date{
+	width: 200px;
+	line-height: 35px;
+	font-size: 18px;
+	float: right;
+	color: #fff;
+/*display: none;*/
+}
+.time{
+	width: 90px;
+	line-height: 35px;
+	font-size: 18px;
+	float: right;
+	color: #fff;
+/*display: none;*/
+}
+#overlay{  
+	opacity: .3; 
+	position: absolute;  
+	top: 0;  
+	left: 0; 
+	background-color: black;  
+	width: 100%; 
+	z-index: 200 ;//保证这个悬浮层位于其它内容之上  
+}
+/*车位管理表样式*/
+.carPlaceShow{
+	float: left;
+	line-height: 25px;
+	color: #162AD4;
+}
+.setPlaceform{
+	height: 200px;
+}
+.Psetbutton{
+	display:inline-block;
+	line-height: 25px;
+	margin-right: 20px;
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	color: #404142;
+	font-family: "宋体";
+	float: left;
+}
+.timerplug{
+
+	margin-left: 10px;
+	float: left;
+}
+.timerplug input{	
+	font-family:Tahoma,Verdana,sans-serif;
+	font-size:14px;
+	width: 140px;
+	height: 21px;
+}
+/*.options { 
+	display:none; 
+	border-left:6px solid #8ae; 
+	padding:10px; font-size:12px; 
+	line-height:1.4; 
+	background-color:#eee; 
+	border-radius:4px;}
+.date-picker-wrapper.date-range-picker19 .day.first-date-selected {
+ background-color: red !important; }
+.date-picker-wrapper.date-range-picker19 .day.last-date-selected { 
+	background-color: orange !important; }*/
+/*.formhead{
+	cursor: move;
+}*/

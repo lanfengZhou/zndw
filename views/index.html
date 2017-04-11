@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <title>定位系统</title>
+	 <!-- Bootstrap -->
+  <link href="../js/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">智能定位系统</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left nav-pills">
+          <li class="dropdown"  role="presentation"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button" aria-expanded="false">
+          RFID标签信息管理<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="divider"></li>
+                <li><a href="javascript:;" name="/html/eleTag.html">电子标签管理</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:;" name="/html/locObj.html">定位对象管理</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:;" name="/html/canvas.html">定位对象位置显示</a></li>
+              </ul>
+          </li>
+           <li class="dropdown"  role="presentation"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button" aria-expanded="false">
+          GPS信息管理<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="divider"></li>
+                <li><a href="javascript:;" name="html/gps.html">GPS信息管理</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:;" name="html/gpsObj.html">定位对象管理</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:;" name="html/locMap.html">电子围栏</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+  <!-- <div class="embed-responsive embed-responsive-16by9  center"> -->
+  <iframe class="embed-responsive-item center" src="" id="show"></iframe>
+  <!-- </div> -->
+  <!-- <div id="show" class="center"></div> -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="../js/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

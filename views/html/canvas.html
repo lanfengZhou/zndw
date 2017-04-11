@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cavas</title>
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<!-- 	<script type="text/javascript" src="../js/drags.js"></script> -->
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #2b282a;
+		}
+		.topview{
+			width: 50px;
+			height: 50px;
+			background-color: #f00;
+			color: #000;
+			font-family: "微软雅黑";
+			font-size: 16px;
+			line-height: 50px;
+			cursor: pointer;
+			border-radius: 15px;
+			position: absolute;
+			top: 275px;
+			left: 375px;
+			z-index: 100
+		}
+		.data{
+			position: absolute;
+			top:0;
+			left: 700px;
+		}
+		.showmessage{
+			height: 600px;
+			/*background-color: #6E5B5B;*/
+			color: #fff;
+			position: absolute;
+			left: 800px;
+		}
+	</style>
+</head>
+<body>
+	<div class="showmessage" id="show">信息显示</div>
+	<div class="data"><a href="javascript:;" id="adddata">增加</a>
+	<a href="javascript:;" id="deldata">减小</a></div>
+	<div class="topview" id="toptest">检测器</div>
+	<canvas id="mycavans" width="800px" height="600px" style="background-color: #e8e8e8"></canvas>
+	<script type="text/javascript" src="../js/canvas.js"></script>
+</body>
+</html>
