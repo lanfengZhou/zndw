@@ -53,7 +53,7 @@ $(function(){
 		},
 		position:"last"
 	});
-	 jQuery("#eletagList").jqGrid('setGridWidth',$(".eletagList").width()-2,true);
+	 jQuery("#eletagList").jqGrid('setGridWidth',$(window).width()-2,true);
 	 jQuery("#eletagList").jqGrid('setGridHeight',$(window).height()-150,true);
 	 $("#cancle").click(function(){
 	 	$("#formDiv").slideUp("fast");

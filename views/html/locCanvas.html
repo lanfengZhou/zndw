@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	 <!-- Bootstrap -->
+<!--   <link href="../js/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #2b282a;
+		}
+		.topview{
+			width: 50px;
+			height: 50px;
+			background-color: #f00;
+			color: #000;
+			font-family: "微软雅黑";
+			font-size: 16px;
+			line-height: 50px;
+			cursor: pointer;
+			border-radius: 15px;
+			position: absolute;
+			top: 275px;
+			left: 375px;
+			z-index: 100
+		}
+		.showmessage{
+			height: 600px;
+			color: #fff;
+			overflow: hidden;
+		}
+		#show{
+			height: 200px;
+			border-bottom: 2px solid #31708f;
+		}
+		.redraw{
+			height: 40px;
+			background-color: #31708f;
+			color: #fff;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		h4{
+			margin: 20px 0;
+			/*cursor: pointer;*/
+		}
+		#queryAll{
+        width: 100%;
+        height: 40px; 
+        background-color: #31708f;
+        color:#fff;
+	    }
+	    #queryAll:hover{
+	        cursor: pointer;
+	    }
+	    .left{
+	    	float: left;
+	    }
+	    .right{
+	    	float: right;
+	    }
+	    .tc{
+	    	position: absolute;
+	    	/*width: 100px;
+	    	height: 30px;*/
+	    	display: none;
+	    	top: 0px;
+	    	left: 10px;
+	    	/*border: 1px solid #f00;*/
+	    	color: #fff;
+	    	border-radius: 5px;
+	    	background-color: rgba(52,52,52,0.8);
+	    }
+	</style>
+</head>
+<body>
+	<!-- <div class="topview" id="toptest">检测器</div> -->
+	<canvas id="mycavans" width="800px" height="600px" style="background-color: #e8e8e8;float: left;"></canvas>
+	<div class="showmessage">
+		<div id="show">信息展示</div>
+		<button class="redraw" id="redraw">重新绘制电子围栏</button>
+		<div class="left">
+			<h4>查询所有定位对象</h4>
+			<button id="queryAll">查看所有定位对象</button>
+		</div>
+		<div class="right">
+			<h4>选择查询单个定位对象</h4>
+			<select id="queryOne" style="width:100%;height: 40px">
+			</select>			
+		</div>
+
+	</div>
+	<div class="tc" id="tc">
+		nihao
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/locCanvas.js"></script>
+</body>
+</html>

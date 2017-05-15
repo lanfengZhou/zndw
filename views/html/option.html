@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <title>电子围栏子菜单</title>
+   <!-- Bootstrap -->
+  <link href="../js/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <style type="text/css">
+   html,body{
+    width: 100%;
+    height: 100%;
+   }
+    .selectDiv{
+      /*background-color: #ff0;*/
+      position: relative;
+      top: 30%;
+    }
+     .row:first-child{
+      margin-bottom: 50px;
+/*      background-color: #f00;*/
+    }
+  </style>
+</head>
+<body>
+    <div class="container-fluid selectDiv">
+      <div class="row">
+        <button type="button" class="btn btn-lg btn-primary col-lg-4 col-sm-4 col-xs-8 col-lg-offset-4 col-sm-offset-4 col-xs-offset-2" id="editMap">编辑电子围栏区域</button>
+      </div>
+      <div class="row">
+        <button type="button" class="btn btn-lg btn-primary col-lg-4 col-sm-4 col-xs-8 col-lg-offset-4 col-sm-offset-4 col-xs-offset-2" id="locMap" >查看定位对象</button>
+      </div>
+    </div>
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="../js/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $("#editMap,#locMap").click(function(){
+      window.location.href='./'+$(this).prop("id")+'.html';
+    });
+  </script>
+
+</body>
+</html>

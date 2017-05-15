@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>cavas</title>
-	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
 <!-- 	<script type="text/javascript" src="../js/drags.js"></script> -->
 	<style type="text/css">
 		*{
@@ -36,17 +35,32 @@
 			height: 600px;
 			/*background-color: #6E5B5B;*/
 			color: #fff;
+			overflow: hidden;
+		}
+		#show{
+			width: 100%;
+			height: 200px;
+		}
+		.draw{
+			height: 40px;
+		}
+		.queryObj{
+			height: 40px;
+			background-color: #1e70ad;
+			color: #fff;
 			position: absolute;
-			left: 800px;
+			top: 0;
+			right: 0;
 		}
 	</style>
 </head>
 <body>
-	<div class="showmessage" id="show">信息显示</div>
-	<div class="data"><a href="javascript:;" id="adddata">增加</a>
-	<a href="javascript:;" id="deldata">减小</a></div>
-	<div class="topview" id="toptest">检测器</div>
-	<canvas id="mycavans" width="800px" height="600px" style="background-color: #e8e8e8"></canvas>
+	<canvas id="mycavans" width="800px" height="600px" style="background-color: #e8e8e8;float: left"></canvas>
+	<div class="showmessage">
+		<div id="show">信息展示</div>
+		<button class="queryObj" id="queryObj">查看定位对象</button>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../js/canvas.js"></script>
 </body>
 </html>

@@ -1,13 +1,21 @@
-	*{
+*{
 			margin: 0px;
 			padding: 0px;
 }
-body{
+html,body{
+    width: 100%;
+    height: 100%;
     background: url("../images/bg.jpg") ;
 }
+.content{
+  display: flex;
+  height: 100%;
+  padding-top: 50px;
+  flex: row nowrap;
+
+}
 .center{
-  margin-top: 50px;
-  width: 100%;
+  flex-grow: 1;
 }
 .eletagList,.locobjList{
     width: 100%;

@@ -144,5 +144,5 @@ $(function(){
 	 		$("#number").empty();
 	 		$(".eleNumber").hide();
 	 	}
-	 })
+	 });
 })

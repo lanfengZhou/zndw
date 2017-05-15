@@ -41,7 +41,7 @@
                 <li class="divider"></li>
                 <li><a href="javascript:;" name="html/gpsObj.html">定位对象管理</a></li>
                 <li class="divider"></li>
-                <li><a href="javascript:;" name="html/locMap.html">电子围栏</a></li>
+                <li><a href="javascript:;" name="html/option.html">电子围栏</a></li>
               </ul>
           </li>
         </ul>
@@ -49,7 +49,10 @@
     </div><!--/.container-fluid -->
   </nav>
   <!-- <div class="embed-responsive embed-responsive-16by9  center"> -->
-  <iframe class="embed-responsive-item center" src="" id="show"></iframe>
+  <div class="content">
+      <!-- <div class="center">nihao</div> -->
+      <iframe class="embed-responsive-item center" src="../html/animation.html" id="show"></iframe>
+  </div>
   <!-- </div> -->
   <!-- <div id="show" class="center"></div> -->
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -57,5 +60,21 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script type="text/javascript" src="../js/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/index.js"></script>
+  <script type="text/javascript">
+    // if(navigator.onLine){
+    //   console.log("1");
+    // }else{
+    //   console.log("2");
+    // }
+    // EventUtil.addHandler(window,"online",function () {
+    //   console.log("online");
+    // });
+    // EventUtil.addHandler(window,"offline",function () {
+    //   console.log("offline");
+    // });
+    // document.cookie="name=nicholas";
+    document.cookie=encodeURIComponent("name")+"="+encodeURIComponent("nicholas");
+    sessionStorage.setItem("name","nihao");
+  </script>
 </body>
 </html>

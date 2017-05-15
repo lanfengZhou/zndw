@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页特效</title>
+	<style type="text/css">
+		.parent{
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -150px 0 0 -150px;
+			perspective: 2000px;
+			/*transition:5s linear;*/
+		}
+		.parent .box{
+			position: absolute;
+			width: 100%;
+			height: 300px;
+			/*background-color: #f00;*/
+			transform-style: preserve-3d;
+			-webkit-animation: rotate 5s 12s linear infinite both;
+		}
+		.box>div{
+			width: 100%;
+			height: 300px;
+			box-sizing: border-box;
+			border: 2px solid #000;
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 50px;
+			text-align: center;
+			line-height: 300px;
+			transition:4s linear;
+		}
+		.box .top{
+			-webkit-animation : top 2s  0s linear  both;
+		}
+		.box .bottom{
+			-webkit-animation : bottom 2s  2s linear  both;
+		}
+		.box .left{
+			-webkit-animation : left 2s  4s linear  both;
+		}
+		.box .right{
+			-webkit-animation : right 2s  6s linear  both;
+		}
+		.box .front{
+			-webkit-animation : front 2s  8s linear  both;
+		}
+		.box .back{
+			-webkit-animation : back 2s  10s linear  both;
+		}
+/*		.parent:hover{
+			left: 150px;
+			cursor: pointer;
+		}*/
+		.parent:hover .box>div{border-color:rgba(0,0,0,0);color:#fff;}
+		.parent:hover .box .top{background:rgba(255,255,0,0.8);}
+		.parent:hover .box .bottom{background:rgba(0,255,0,0.8);}
+		.parent:hover .box .left{background:rgba(0,255,255,0.8);}
+		.parent:hover .box .right{background:rgba(0,0,255,0.8);}
+		.parent:hover .box .front{background:rgba(255,0,255,0.8);}
+		.parent:hover .box .back{background:rgba(255,0,0,0.8);}
+		@-webkit-keyframes rotate{
+			100%{-webkit-transform: rotate3d(1,1,1,360deg);}
+		}
+		@-webkit-keyframes top{
+			100%{-webkit-transform: rotateX(90deg) translateZ(150px);transform: rotateX(90deg) translateZ(150px);}
+		}
+		@-webkit-keyframes bottom{
+			100%{-webkit-transform: rotateX(-90deg) translateZ(150px);transform: rotateX(-90deg) translateZ(150px);}
+		}
+		@-webkit-keyframes left{
+			100%{-webkit-transform: rotateY(-90deg) translateZ(150px);transform: rotateY(-90deg) translateZ(150px);}
+		}
+		@-webkit-keyframes right{
+			100%{-webkit-transform: rotateY(90deg) translateZ(150px);transform: rotateY(90deg) translateZ(150px);}
+		}
+		@-webkit-keyframes front{
+			100%{-webkit-transform:translateZ(150px);transform: translateZ(150px);}
+		}
+		@-webkit-keyframes back{
+			100%{-webkit-transform: translateZ(-150px);transform: translateZ(-150px);}
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="box">
+			<div class="top"></div>
+			<div class="bottom"></div>
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="front"></div>
+			<div class="back"></div>
+		</div>
+	</div>
+<!-- 	<script type="text/javascript">
+    var ele=[];
+    var ele2=[];
+    var ele1=[];
+    ele1.push("1");
+    ele1.push("2");
+    ele2.push("1");
+    ele2.push("2");
+    ele.push(ele1);
+    ele.push(ele2);
+    // ele=[];
+    // ele.splice(0,ele.length);
+    console.log(ele);
+</script> -->
+</body>
+</html>
